@@ -3247,3 +3247,71 @@ input, select, textarea {
 		color: #007bff; /* Text color on hover */
 	}
 	
+
+	.project-box {
+		width: calc(33.33% - 20px); /* Adjust width and spacing as needed */
+		margin-right: 20px;
+		margin-bottom: 20px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.project-box img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+	
+	.project-box h3 {
+		margin-top: 10px;
+		font-size: 18px; /* Adjust font size */
+		font-weight: bold;
+	}
+	
+	.project-box p {
+		margin-top: 5px;
+		font-size: 14px; /* Adjust font size */
+	}
+	
+	.project-box a.button {
+		display: block;
+		margin-top: 15px;
+		padding: 8px 16px;
+		background-color: #007bff; /* Button background color */
+		color: #fff; /* Button text color */
+		text-align: center;
+		border-radius: 5px;
+		text-decoration: none;
+	}
+	
+	.project-box a.button:hover {
+		background-color: #0056b3; /* Button background color on hover */
+	}
+	
+
+
+	.cookie-popup {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		left: 20px;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 20px;
+		z-index: 9999;
+	}
+	
+	.cookie-popup-content {
+		text-align: center;
+	}
+	
+	.cookie-popup-content p {
+		margin-bottom: 10px;
+	}
+	
+	.cookie-popup-content a {
+		color: #007bff;
+		text-decoration: none;
+	}
+	

@@ -15,6 +15,33 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
+
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var cookiePopup = document.getElementById("cookie-popup");
+			var acceptCookiesBtn = document.getElementById("accept-cookies-btn");
+		
+			// Check if the user has already accepted cookies
+			var cookiesAccepted = localStorage.getItem("cookiesAccepted");
+		
+			if (!cookiesAccepted) {
+				// Show the cookie popup if not already accepted
+				cookiePopup.style.display = "block";
+			}
+		
+			// Event listener for accepting cookies
+			acceptCookiesBtn.addEventListener("click", function() {
+				// Hide the cookie popup
+				cookiePopup.style.display = "none";
+				// Set a flag in local storage to indicate that cookies are accepted
+				localStorage.setItem("cookiesAccepted", "true");
+			});
+		});
+		
+	</script>
+
+
 </head>
 <body class="is-preload">
 
@@ -101,7 +128,9 @@
 					<li><a href="https://www.linkedin.com/in/trevor-lammers-155484250/" class="icon brands fa-linkedin"><span class="label">Dribbble</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</li><li><a href="terms.html">Terms and Conditions</a></li>
+					</li><li><a href="privacy.html">Privacy Policy</a></li>
+					</li><li><a href="cookies.html">Cookie Policy</a></li>
 				</ul>
 			</div>
 		</footer>
@@ -124,6 +153,15 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+
+	<div id="cookie-popup" class="cookie-popup">
+		<div class="cookie-popup-content">
+			<p>This website uses cookies to ensure you get the best experience on our website. By continuing to use this site, you agree to our <a href="cookies.html">Cookie Policy</a>.</p>
+			<button id="accept-cookies-btn" class="button">Accept</button>
+		</div>
+	</div>
+	
 
 </body>
 </html>
