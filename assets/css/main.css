@@ -3317,8 +3317,8 @@ input, select, textarea {
 	
 
 	.project-image {
-		width: 500px; /* Set width to 500 pixels */
-		height: 500px; /* Set height to 500 pixels */
-		object-fit: fill; /* Ensures images fill the container */
+		width: 210px; /* Set width to 500 pixels */
+		height: 132px; /* Set height to 500 pixels */
+		object-fit: cover; /* Ensures images fill the container */
 	}
 	
